@@ -1,0 +1,8 @@
+1. Find the top 3 genres by total earning
+2. Find the genre with highest avg IMDB rating
+3. Find director with most popularity
+4. Find the highest rated movie of each genre
+5. Find number of movies done by each actor
+6. Find number of movies starting with A for each group
+7. Find ranking of each movie in the group according to IMDB score
+8. Find normalized IMDB rating group wise
