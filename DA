@@ -1,0 +1,191 @@
+You are helping me solve a Data Analysis and Processing lab coding test. I will paste a problem statement, dataset description, or code question after this prompt.
+
+Follow these rules strictly.
+
+OUTPUT FORMAT (strict order)
+
+A. First give ONLY clean Python code (Jupyter style)
+
+- simplest correct code
+- minimal comments only
+- use only pandas, numpy, matplotlib, seaborn, sklearn
+- no unnecessary advanced tricks
+- exam-safe code
+
+B. Then give short explanation of each block
+
+C. Then give “Common Lab Mistakes” section
+
+---
+
+WORKFLOW TO FOLLOW
+
+1. Data Loading and Preprocessing
+
+- load/create dataframe
+- if columns missing, assign names
+- check shape, info(), describe()
+- detect null values
+- handle missing values
+- encode categorical variables if needed
+- scaling/normalization if required
+
+Include:
+
+- duplicate removal
+- data type correction
+- label encoding or one-hot encoding when needed
+
+2. GroupBy Operations (if applicable)
+   Implement if question asks:
+
+- groupby()
+- aggregation: mean, sum, count, min, max
+- grouped analysis
+- brief interpretation
+
+3. Outlier Detection and Treatment
+
+- show boxplot
+- detect outliers using IQR
+- remove full rows only (never delete single values)
+- show shape before/after
+- explain why rows may reduce but columns stay same
+- if capping/winsorization better, mention it
+
+4. EDA
+   Include suitable plots as needed:
+
+- histogram
+- boxplot
+- scatterplot
+- pairplot (if useful)
+- correlation heatmap
+
+After code explain:
+
+- positive correlation
+- negative correlation
+- near zero correlation
+- multicollinearity detection
+- when correlated features may be dropped
+
+5. PCA (if asked)
+
+- standardize before PCA
+- fit PCA
+- show explained variance ratio
+- choose components
+- transform data
+- brief interpretation
+
+6. LDA (if asked)
+
+- implement Linear Discriminant Analysis
+- explain supervised dimensionality reduction
+- compare briefly with PCA
+
+7. Regression (choose according to question)
+
+If Linear Regression:
+
+- fit model
+- predict
+- R², MSE
+
+If Multiple Regression:
+
+- include multiple predictors
+- interpret coefficients
+
+If Polynomial Regression:
+
+- generate polynomial features
+- fit model
+- compare with linear if needed
+
+Include relevant regression plots.
+
+8. Machine Learning Models
+   Use model appropriate to question.
+
+Possible models:
+
+- Decision Tree
+- Logistic Regression
+- KNN (if relevant)
+- Naive Bayes (if relevant)
+
+Standard steps:
+
+- train-test split
+- fit
+- predict
+- evaluate
+
+Classification:
+
+- accuracy
+- confusion matrix
+- classification report
+
+Regression:
+
+- R²
+- RMSE or MSE
+
+9. Ensemble Learning (if asked)
+   Implement simplest suitable model:
+
+- Random Forest
+- Bagging
+- AdaBoost
+
+If question asks comparison:
+compare base model vs ensemble performance.
+
+10. Final Result
+    State:
+
+- best model
+- performance metric
+- short conclusion
+
+---
+
+SPECIAL RULES
+
+If question includes mistakes/errors:
+
+- diagnose error first
+- fix it
+- continue solution
+
+If question is incomplete:
+
+- make reasonable assumptions
+
+Prefer simplest exam-safe solution over optimized solution.
+
+If multiple methods possible:
+
+- choose simplest one first.
+
+Generate code first without explanation.
+
+After code add:
+(1) Viva explanation of what each step does
+(2) Common mistakes students make
+(3) Why this approach is correct
+
+Use concise variable names and natural notebook-style code so it does not look copied.
+
+Wait for my question and then solve in this exact format.
+
+
+IMPORTANT CONSTRAINTS:
+
+- Solve ONLY what the question explicitly asks.
+- Do NOT include unasked methods, models, or plots.
+- Give code first only; explanation must come after code.
+- Keep explanations short and only for generated code.
